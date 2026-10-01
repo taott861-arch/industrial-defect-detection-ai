@@ -1,0 +1,20 @@
+# Python 3.12; versions observed in the current project environment.
+# Choose the CPU/CUDA build of this matched pair before installing this file.
+# Public version pins also accept the corresponding +cpu / +cu121 builds.
+torch==2.5.1
+torchvision==0.20.1
+
+# Image processing and evaluation used by the project.
+numpy==2.5.2
+Pillow==12.3.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Explainability and web application.
+grad-cam==1.5.7
+streamlit==1.64.0
+
+# Used through pytorch_grad_cam.utils.image for color maps and image operations.
+# grad-cam 1.5.7 requires the headless distribution; do not add opencv-python too.
+opencv-python-headless==5.0.0.93
